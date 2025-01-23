@@ -24,11 +24,11 @@ namespace DocExportPOC
 
                 // Create Word document
                 var docService = DocumentGenerationServiceFactory.CreateService(ExportType.Word);
-                docService.GenerateDocument(sampleData.MasterFormatSections, "ExportedDocument.docx");
+                docService.GenerateDocument(sampleData.MasterFormatSections, "ExportedDocument.docx", sampleData.Project);
 
                 // Create Text document
                 var txtService = DocumentGenerationServiceFactory.CreateService(ExportType.TXT);
-                txtService.GenerateDocument(sampleData.MasterFormatSections, "ExportedDocument.txt");
+                txtService.GenerateDocument(sampleData.MasterFormatSections, "ExportedDocument.txt", sampleData.Project);
 
                 Console.WriteLine("Documents generated successfully!");
             }

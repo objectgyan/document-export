@@ -1,704 +1,725 @@
 {
-    "masterFormatSections": [
+  "masterFormatSections": [
+    {
+      "sectionId": "02c52443-a783-466f-97dc-319a70a6294c",
+      "masterFormatNumber": "01",
+      "masterFormatName": "General Requirements",
+      "childSections": [
         {
-            "sectionId": "02c52443-a783-466f-97dc-319a70a6294c",
-            "masterFormatNumber": "01",
-            "masterFormatName": "General Requirements",
-            "childSections": [
-                {
-                    "sectionId": "ce27086a-30f9-4660-a8e2-1804b245071a",
-                    "masterFormatNumber": "01.10.00",
-                    "masterFormatName": "Summary",
-                    "childSections": [
-                        {
-                            "sectionId": "468db51c-dfd5-4456-aa20-a4ce35e99dff",
-                            "masterFormatNumber": "01.11.00",
-                            "masterFormatName": "Summary of Work",
-                            "childSections": null,
-                            "products": null,
-                            "parentSectionId": "ce27086a-30f9-4660-a8e2-1804b245071a",
-                            "isVisible": true,
-                            "isExpanded": true,
-                            "sectionType": "MasterFormat"
-                        }
-                    ],
-                    "products": null,
-                    "parentSectionId": "02c52443-a783-466f-97dc-319a70a6294c",
-                    "isVisible": true,
-                    "isExpanded": true,
-                    "sectionType": "MasterFormat"
-                },
-                {
-                    "sectionId": "7e9bc03e-5bd0-47ce-b8f3-6675ec2c760f",
-                    "masterFormatNumber": "01.20.00",
-                    "masterFormatName": "Price and Payment Procedures",
-                    "childSections": [
-                        {
-                            "sectionId": "55f80708-302e-4153-88ba-9c6bc0a3b952",
-                            "masterFormatNumber": "01.22.00",
-                            "masterFormatName": "Unit Prices",
-                            "childSections": null,
-                            "products": null,
-                            "parentSectionId": "7e9bc03e-5bd0-47ce-b8f3-6675ec2c760f",
-                            "isVisible": true,
-                            "isExpanded": true,
-                            "sectionType": "MasterFormat"
-                        }
-                    ],
-                    "products": null,
-                    "parentSectionId": "02c52443-a783-466f-97dc-319a70a6294c",
-                    "isVisible": true,
-                    "isExpanded": true,
-                    "sectionType": "MasterFormat"
-                }
-            ],
-            "products": null,
-            "parentSectionId": null,
-            "isVisible": true,
-            "isExpanded": true,
-            "sectionType": "MasterFormat"
+          "sectionId": "ce27086a-30f9-4660-a8e2-1804b245071a",
+          "masterFormatNumber": "01.10.00",
+          "masterFormatName": "Summary",
+          "childSections": [
+            {
+              "sectionId": "468db51c-dfd5-4456-aa20-a4ce35e99dff",
+              "masterFormatNumber": "01.11.00",
+              "masterFormatName": "Summary of Work",
+              "childSections": null,
+              "products": null,
+              "parentSectionId": "ce27086a-30f9-4660-a8e2-1804b245071a",
+              "isVisible": true,
+              "isExpanded": true,
+              "sectionType": "MasterFormat"
+            }
+          ],
+          "products": null,
+          "parentSectionId": "02c52443-a783-466f-97dc-319a70a6294c",
+          "isVisible": true,
+          "isExpanded": true,
+          "sectionType": "MasterFormat"
         },
         {
-            "sectionId": "16e96a8a-a2f2-41a9-9427-87da42e07d7f",
-            "masterFormatNumber": "08",
-            "masterFormatName": "Openings",
-            "childSections": [
-                {
-                    "sectionId": "a6cd490f-7146-4ac6-a9f7-9ac80b1c4c1e",
-                    "masterFormatNumber": "08.10.00",
-                    "masterFormatName": "Doors and Frames",
-                    "childSections": [
-                        {
-                            "sectionId": "9f175d68-4ce2-426b-bf2c-6ed12f731103",
-                            "masterFormatNumber": "08.11.00",
-                            "masterFormatName": "Metal Doors and Frames",
-                            "childSections": [
-                                {
-                                    "sectionId": "4e680a8d-e635-4b0d-9eb8-041d62b28046",
-                                    "masterFormatNumber": "08.11.13",
-                                    "masterFormatName": "Hollow Metal Doors and Frames",
-                                    "childSections": null,
-                                    "products": [
-                                        {
-                                            "categoryId": "c8e2a151-d1ea-47bf-82ac-71c4a1744956",
-                                            "categoryUrlSlug": "doors",
-                                            "createdDate": "2024-10-03T10:13:38.905834",
-                                            "createdByUserId": "69b97326-104a-47dd-8bd3-22dd6983c5fb",
-                                            "createdByUserName": "Brad Clouser",
-                                            "commentsCount": 0,
-                                            "sectionId": "4e680a8d-e635-4b0d-9eb8-041d62b28046",
-                                            "customColumns": [
-                                                {
-                                                    "title": "Approval Status",
-                                                    "data": {
-                                                        "Type": "Bounded",
-                                                        "Type": "Bounded",
-                                                        "allowMultipleValues": false,
-                                                        "boundedData": [
-                                                            {
-                                                                "boundedDataOptionId": "8d501138-01b8-4324-a026-9c583b0d25d5",
-                                                                "name": "Approved Alternate",
-                                                                "color": "95eece"
-                                                            }
-                                                        ],
-                                                        "scheduleCustomColumnId": "2d936bd8-b8ee-44b0-a7dc-bfac7e3315ad",
-                                                        "scheduleRowId": "f26e6f14-0851-45e0-acb3-b7847c375eeb"
-                                                    },
-                                                    "displayOrder": 1
-                                                },
-                                                {
-                                                    "title": "My bounded option",
-                                                    "data": {
-                                                        "Type": "Bounded",
-                                                        "Type": "Bounded",
-                                                        "allowMultipleValues": false,
-                                                        "boundedData": [
-                                                            {
-                                                                "boundedDataOptionId": "e1826ec9-b055-4fc6-8d46-2d1878786095",
-                                                                "name": "Option1",
-                                                                "color": "DFF4EC"
-                                                            },
-                                                            {
-                                                                "boundedDataOptionId": "5db23355-dd43-4597-856a-4922a7849dfb",
-                                                                "name": "Option2",
-                                                                "color": "E5E9F0"
-                                                            },
-                                                            {
-                                                                "boundedDataOptionId": "3d3b7c62-c1c2-4ba1-b159-68223f08b1c8",
-                                                                "name": "Option3",
-                                                                "color": "D1E2FF"
-                                                            }
-                                                        ],
-                                                        "scheduleCustomColumnId": "e76c0093-32ac-4ed9-b4d5-5ba11be0648f",
-                                                        "scheduleRowId": "f26e6f14-0851-45e0-acb3-b7847c375eeb"
-                                                    },
-                                                    "displayOrder": 3
-                                                },
-                                                {
-                                                    "title": "My Numeric Field",
-                                                    "data": {
-                                                        "Type": "Metric",
-                                                        "Type": "Metric",
-                                                        "allowMultipleValues": false,
-                                                        "decimalCount": 2,
-                                                        "metricData": [
-                                                            {
-                                                                "metricValueId": "f66f24e6-5dea-4d8f-98ad-7c950df9c1fb",
-                                                                "value": 1
-                                                            },
-                                                            {
-                                                                "metricValueId": "62e518db-140a-4b7f-a9a9-9dd3713c8f77",
-                                                                "value": 2
-                                                            },
-                                                            {
-                                                                "metricValueId": "6750750b-621c-4544-8959-ace895451d8e",
-                                                                "value": 3
-                                                            }
-                                                        ],
-                                                        "scheduleCustomColumnId": "6c39fa21-d149-4fdd-849e-78990371320b",
-                                                        "scheduleRowId": "f26e6f14-0851-45e0-acb3-b7847c375eeb"
-                                                    },
-                                                    "displayOrder": 4
-                                                }
-                                            ],
-                                            "displayOrder": 1,
-                                            "Type": "Product",
-                                            "isPlaceholderProduct": false,
-                                            "productId": "74f40338-82e8-4315-b437-91c5ef624cb2",
-                                            "productName": "Four-Fold Door",
-                                            "productSubName": "FF100 Solid Sheeted-Cold-Rlld.Stl.",
-                                            "productImageUrl": "https://res.cloudinary.com/acelab/image/upload/v1682652577/product-files/Mz4bfzxn_GU6p-ar0TBBF89rsk-AkGu8UxZgWuIb6TA_cpz7wc.jpg",
-                                            "manufacturerId": "8dceef35-b02a-48f2-99af-f0aafdb6d7e5",
-                                            "manufacturerName": "Door Engineering & Manufacturing",
-                                            "productUrlSlug": "door-engineering-and-manufacturing-four-fold-door-ff100-solid-sheeted-cold-rlld-stl-",
-                                            "manufacturerUrlSlug": "door-engineering--mnaufacturing",
-                                            "scheduleCustomColumnId": null,
-                                            "scheduleRowId": "f26e6f14-0851-45e0-acb3-b7847c375eeb"
-                                        },
-                                        {
-                                            "categoryId": "c8e2a151-d1ea-47bf-82ac-71c4a1744956",
-                                            "categoryUrlSlug": "doors",
-                                            "createdDate": "2024-10-03T10:13:38.905888",
-                                            "createdByUserId": "69b97326-104a-47dd-8bd3-22dd6983c5fb",
-                                            "createdByUserName": "Brad Clouser",
-                                            "commentsCount": 0,
-                                            "sectionId": "4e680a8d-e635-4b0d-9eb8-041d62b28046",
-                                            "customColumns": [
-                                                {
-                                                    "title": "Approval Status",
-                                                    "data": {
-                                                        "Type": "Bounded",
-                                                        "Type": "Bounded",
-                                                        "allowMultipleValues": false,
-                                                        "boundedData": [
-                                                            {
-                                                                "boundedDataOptionId": "f28a5acf-9307-4791-a97d-f34004e29f38",
-                                                                "name": "In Consideration",
-                                                                "color": "f1f2f4"
-                                                            }
-                                                        ],
-                                                        "scheduleCustomColumnId": "2d936bd8-b8ee-44b0-a7dc-bfac7e3315ad",
-                                                        "scheduleRowId": "f0e40736-679d-4f1a-99e8-bfc3e0a98469"
-                                                    },
-                                                    "displayOrder": 1
-                                                },
-                                                {
-                                                    "title": "My bounded option",
-                                                    "data": {
-                                                        "Type": "Bounded",
-                                                        "Type": "Bounded",
-                                                        "allowMultipleValues": false,
-                                                        "boundedData": [],
-                                                        "scheduleCustomColumnId": "e76c0093-32ac-4ed9-b4d5-5ba11be0648f",
-                                                        "scheduleRowId": "f0e40736-679d-4f1a-99e8-bfc3e0a98469"
-                                                    },
-                                                    "displayOrder": 3
-                                                },
-                                                {
-                                                    "title": "My Numeric Field",
-                                                    "data": {
-                                                        "Type": "Metric",
-                                                        "Type": "Metric",
-                                                        "allowMultipleValues": false,
-                                                        "decimalCount": 2,
-                                                        "metricData": [],
-                                                        "scheduleCustomColumnId": "6c39fa21-d149-4fdd-849e-78990371320b",
-                                                        "scheduleRowId": "f0e40736-679d-4f1a-99e8-bfc3e0a98469"
-                                                    },
-                                                    "displayOrder": 4
-                                                }
-                                            ],
-                                            "displayOrder": 2,
-                                            "Type": "Product",
-                                            "isPlaceholderProduct": false,
-                                            "productId": "8f4e5492-a3a9-4306-a959-a0d64ee345c0",
-                                            "productName": "Top-Hung Sliding Door",
-                                            "productSubName": "Fire Rated  - Cold-Rolled Steel",
-                                            "productImageUrl": "https://res.cloudinary.com/acelab/image/upload/v1682652006/product-files/YEYOQ32bQ0siVQFzmeVb3xKDqDW2iVFz3UfLfADUT1E_auyrj3.jpg",
-                                            "manufacturerId": "8dceef35-b02a-48f2-99af-f0aafdb6d7e5",
-                                            "manufacturerName": "Door Engineering & Manufacturing",
-                                            "productUrlSlug": "door-engineering-and-manufacturing-top-hung-sliding-door-fire-rated-cold-rolled-steel",
-                                            "manufacturerUrlSlug": "door-engineering--mnaufacturing",
-                                            "scheduleCustomColumnId": null,
-                                            "scheduleRowId": "f0e40736-679d-4f1a-99e8-bfc3e0a98469"
-                                        },
-                                        {
-                                            "categoryId": "c8e2a151-d1ea-47bf-82ac-71c4a1744956",
-                                            "categoryUrlSlug": "doors",
-                                            "createdDate": "2024-10-03T10:13:38.905931",
-                                            "createdByUserId": "69b97326-104a-47dd-8bd3-22dd6983c5fb",
-                                            "createdByUserName": "Brad Clouser",
-                                            "commentsCount": 0,
-                                            "sectionId": "4e680a8d-e635-4b0d-9eb8-041d62b28046",
-                                            "customColumns": [
-                                                {
-                                                    "title": "Approval Status",
-                                                    "data": {
-                                                        "Type": "Bounded",
-                                                        "Type": "Bounded",
-                                                        "allowMultipleValues": false,
-                                                        "boundedData": [
-                                                            {
-                                                                "boundedDataOptionId": "233748cd-c7bf-4953-8ec6-bcbd40f2d614",
-                                                                "name": "Selected",
-                                                                "color": "b7f8e0"
-                                                            }
-                                                        ],
-                                                        "scheduleCustomColumnId": "2d936bd8-b8ee-44b0-a7dc-bfac7e3315ad",
-                                                        "scheduleRowId": "33968fbd-0e38-4c81-abb7-af35263ca6e5"
-                                                    },
-                                                    "displayOrder": 1
-                                                },
-                                                {
-                                                    "title": "My bounded option",
-                                                    "data": {
-                                                        "Type": "Bounded",
-                                                        "Type": "Bounded",
-                                                        "allowMultipleValues": false,
-                                                        "boundedData": [],
-                                                        "scheduleCustomColumnId": "e76c0093-32ac-4ed9-b4d5-5ba11be0648f",
-                                                        "scheduleRowId": "33968fbd-0e38-4c81-abb7-af35263ca6e5"
-                                                    },
-                                                    "displayOrder": 3
-                                                },
-                                                {
-                                                    "title": "My Numeric Field",
-                                                    "data": {
-                                                        "Type": "Metric",
-                                                        "Type": "Metric",
-                                                        "allowMultipleValues": false,
-                                                        "decimalCount": 2,
-                                                        "metricData": [],
-                                                        "scheduleCustomColumnId": "6c39fa21-d149-4fdd-849e-78990371320b",
-                                                        "scheduleRowId": "33968fbd-0e38-4c81-abb7-af35263ca6e5"
-                                                    },
-                                                    "displayOrder": 4
-                                                }
-                                            ],
-                                            "displayOrder": 3,
-                                            "Type": "Product",
-                                            "isPlaceholderProduct": false,
-                                            "productId": "aa49f976-92bd-439c-833e-50f25c2e764d",
-                                            "productName": "Swing Door",
-                                            "productSubName": "Automatic - Cold-Rolled Steel",
-                                            "productImageUrl": "https://res.cloudinary.com/acelab/image/upload/v1682652144/product-files/2GfOAJIQenVPS2bJr_Mh8ifnJHz3nZu5LHg7SEsMi6I_hnpuel.jpg",
-                                            "manufacturerId": "8dceef35-b02a-48f2-99af-f0aafdb6d7e5",
-                                            "manufacturerName": "Door Engineering & Manufacturing",
-                                            "productUrlSlug": "door-engineering-and-manufacturing-swing-door-automatic-cold-rolled-steel",
-                                            "manufacturerUrlSlug": "door-engineering--mnaufacturing",
-                                            "scheduleCustomColumnId": null,
-                                            "scheduleRowId": "33968fbd-0e38-4c81-abb7-af35263ca6e5"
-                                        }
-                                    ],
-                                    "parentSectionId": "9f175d68-4ce2-426b-bf2c-6ed12f731103",
-                                    "isVisible": true,
-                                    "isExpanded": true,
-                                    "sectionType": "MasterFormat"
-                                }
-                            ],
-                            "products": null,
-                            "parentSectionId": "a6cd490f-7146-4ac6-a9f7-9ac80b1c4c1e",
-                            "isVisible": true,
-                            "isExpanded": true,
-                            "sectionType": "MasterFormat"
-                        },
-                        {
-                            "sectionId": "e93dc17e-50e0-47bb-9480-ede30f8060cb",
-                            "masterFormatNumber": "08.14.00",
-                            "masterFormatName": "Wood Doors",
-                            "childSections": [
-                                {
-                                    "sectionId": "f80b3488-f03c-4848-aeaf-d568f659ebba",
-                                    "masterFormatNumber": "08.14.13",
-                                    "masterFormatName": "Carved Wood Doors",
-                                    "childSections": null,
-                                    "products": [
-                                        {
-                                            "categoryId": "464a9e20-61df-4742-abc6-3591270b0ca6",
-                                            "categoryUrlSlug": "masonry-anchors-and-accessories",
-                                            "createdDate": "2024-10-03T10:28:50.12336",
-                                            "createdByUserId": "69b97326-104a-47dd-8bd3-22dd6983c5fb",
-                                            "createdByUserName": "Brad Clouser",
-                                            "commentsCount": 0,
-                                            "sectionId": "f80b3488-f03c-4848-aeaf-d568f659ebba",
-                                            "customColumns": [
-                                                {
-                                                    "title": "Approval Status",
-                                                    "data": {
-                                                        "Type": "Bounded",
-                                                        "Type": "Bounded",
-                                                        "allowMultipleValues": false,
-                                                        "boundedData": [],
-                                                        "scheduleCustomColumnId": "2d936bd8-b8ee-44b0-a7dc-bfac7e3315ad",
-                                                        "scheduleRowId": "21fa829f-8f35-4df4-935f-ca63299aed39"
-                                                    },
-                                                    "displayOrder": 1
-                                                },
-                                                {
-                                                    "title": "My bounded option",
-                                                    "data": {
-                                                        "Type": "Bounded",
-                                                        "Type": "Bounded",
-                                                        "allowMultipleValues": false,
-                                                        "boundedData": [],
-                                                        "scheduleCustomColumnId": "e76c0093-32ac-4ed9-b4d5-5ba11be0648f",
-                                                        "scheduleRowId": "21fa829f-8f35-4df4-935f-ca63299aed39"
-                                                    },
-                                                    "displayOrder": 3
-                                                },
-                                                {
-                                                    "title": "My Numeric Field",
-                                                    "data": {
-                                                        "Type": "Metric",
-                                                        "Type": "Metric",
-                                                        "allowMultipleValues": false,
-                                                        "decimalCount": 2,
-                                                        "metricData": [],
-                                                        "scheduleCustomColumnId": "6c39fa21-d149-4fdd-849e-78990371320b",
-                                                        "scheduleRowId": "21fa829f-8f35-4df4-935f-ca63299aed39"
-                                                    },
-                                                    "displayOrder": 4
-                                                }
-                                            ],
-                                            "displayOrder": 1,
-                                            "Type": "Product",
-                                            "isPlaceholderProduct": true,
-                                            "productId": null,
-                                            "productName": "Mas Placeholder",
-                                            "productSubName": null,
-                                            "productImageUrl": null,
-                                            "manufacturerId": null,
-                                            "manufacturerName": "test",
-                                            "productUrlSlug": null,
-                                            "manufacturerUrlSlug": null,
-                                            "scheduleCustomColumnId": null,
-                                            "scheduleRowId": "21fa829f-8f35-4df4-935f-ca63299aed39"
-                                        }
-                                    ],
-                                    "parentSectionId": "e93dc17e-50e0-47bb-9480-ede30f8060cb",
-                                    "isVisible": true,
-                                    "isExpanded": true,
-                                    "sectionType": "MasterFormat"
-                                }
-                            ],
-                            "products": null,
-                            "parentSectionId": "a6cd490f-7146-4ac6-a9f7-9ac80b1c4c1e",
-                            "isVisible": true,
-                            "isExpanded": true,
-                            "sectionType": "MasterFormat"
-                        }
-                    ],
-                    "products": null,
-                    "parentSectionId": "16e96a8a-a2f2-41a9-9427-87da42e07d7f",
-                    "isVisible": true,
-                    "isExpanded": true,
-                    "sectionType": "MasterFormat"
-                },
-                {
-                    "sectionId": "03b324a3-1eef-4161-afa5-c96cfb8b6efb",
-                    "masterFormatNumber": "08.40.00",
-                    "masterFormatName": "Entrances & Storefronts & Curtain Walls",
-                    "childSections": [
-                        {
-                            "sectionId": "ea0b80c6-70d6-4490-9be5-0adcf9f1329d",
-                            "masterFormatNumber": "08.42.00",
-                            "masterFormatName": "Entrances",
-                            "childSections": [
-                                {
-                                    "sectionId": "9ed7a51f-5ab0-48eb-b990-222addb0f8fa",
-                                    "masterFormatNumber": "08.42.13",
-                                    "masterFormatName": "Aluminum-Framed Entrances",
-                                    "childSections": null,
-                                    "products": null,
-                                    "parentSectionId": "ea0b80c6-70d6-4490-9be5-0adcf9f1329d",
-                                    "isVisible": true,
-                                    "isExpanded": true,
-                                    "sectionType": "MasterFormat"
-                                }
-                            ],
-                            "products": null,
-                            "parentSectionId": "03b324a3-1eef-4161-afa5-c96cfb8b6efb",
-                            "isVisible": true,
-                            "isExpanded": true,
-                            "sectionType": "MasterFormat"
-                        }
-                    ],
-                    "products": null,
-                    "parentSectionId": "16e96a8a-a2f2-41a9-9427-87da42e07d7f",
-                    "isVisible": true,
-                    "isExpanded": true,
-                    "sectionType": "MasterFormat"
-                },
-                {
-                    "sectionId": "a4d07286-3347-4eb1-a570-fe0a227d9b05",
-                    "masterFormatNumber": "08.50.00",
-                    "masterFormatName": "Windows",
-                    "childSections": [
-                        {
-                            "sectionId": "59b4fbab-862a-4bb9-a67b-c8af34fc5dd5",
-                            "masterFormatNumber": "08.52.00",
-                            "masterFormatName": "Wood Windows",
-                            "childSections": [
-                                {
-                                    "sectionId": "fb6c541f-5b52-4f54-bf4d-16c771914834",
-                                    "masterFormatNumber": "08.52.13",
-                                    "masterFormatName": "Metal-Clad Wood Windows",
-                                    "childSections": null,
-                                    "products": [
-                                        {
-                                            "categoryId": "140879ea-ea11-4a0a-802f-4451cdeaa1f6",
-                                            "categoryUrlSlug": "windows",
-                                            "createdDate": "2024-10-03T11:54:06.475",
-                                            "createdByUserId": "69b97326-104a-47dd-8bd3-22dd6983c5fb",
-                                            "createdByUserName": "Brad Clouser",
-                                            "commentsCount": 0,
-                                            "sectionId": "fb6c541f-5b52-4f54-bf4d-16c771914834",
-                                            "customColumns": [
-                                                {
-                                                    "title": "Approval Status",
-                                                    "data": {
-                                                        "Type": "Bounded",
-                                                        "Type": "Bounded",
-                                                        "allowMultipleValues": false,
-                                                        "boundedData": [],
-                                                        "scheduleCustomColumnId": "2d936bd8-b8ee-44b0-a7dc-bfac7e3315ad",
-                                                        "scheduleRowId": "8c026521-b082-4bf0-be72-87251a63081e"
-                                                    },
-                                                    "displayOrder": 1
-                                                },
-                                                {
-                                                    "title": "My bounded option",
-                                                    "data": {
-                                                        "Type": "Bounded",
-                                                        "Type": "Bounded",
-                                                        "allowMultipleValues": false,
-                                                        "boundedData": [],
-                                                        "scheduleCustomColumnId": "e76c0093-32ac-4ed9-b4d5-5ba11be0648f",
-                                                        "scheduleRowId": "8c026521-b082-4bf0-be72-87251a63081e"
-                                                    },
-                                                    "displayOrder": 3
-                                                },
-                                                {
-                                                    "title": "My Numeric Field",
-                                                    "data": {
-                                                        "Type": "Metric",
-                                                        "Type": "Metric",
-                                                        "allowMultipleValues": false,
-                                                        "decimalCount": 2,
-                                                        "metricData": [],
-                                                        "scheduleCustomColumnId": "6c39fa21-d149-4fdd-849e-78990371320b",
-                                                        "scheduleRowId": "8c026521-b082-4bf0-be72-87251a63081e"
-                                                    },
-                                                    "displayOrder": 4
-                                                }
-                                            ],
-                                            "displayOrder": 1,
-                                            "Type": "Product",
-                                            "isPlaceholderProduct": false,
-                                            "productId": "8ab88fe7-7e75-4b26-a6cc-12c50ade2fee",
-                                            "productName": "Picture - Aluminum-Clad Wood",
-                                            "productSubName": "Passive House",
-                                            "productImageUrl": "https://res.cloudinary.com/acelab/image/upload/v1671590687/product-files/Passive_House_Fixed_Picture_Passive_House_HH_Windows_Doors_8_a7zfbj.png",
-                                            "manufacturerId": "78d978bb-18d6-4caf-ab68-5d45e190eea2",
-                                            "manufacturerName": "HH Windows & Doors",
-                                            "productUrlSlug": "hh-windows-and-doors-picture-aluminum-clad-wood-window-passive-house",
-                                            "manufacturerUrlSlug": "hh-windows-&-doors",
-                                            "scheduleCustomColumnId": null,
-                                            "scheduleRowId": "8c026521-b082-4bf0-be72-87251a63081e"
-                                        },
-                                        {
-                                            "categoryId": "140879ea-ea11-4a0a-802f-4451cdeaa1f6",
-                                            "categoryUrlSlug": "windows",
-                                            "createdDate": "2024-10-03T11:54:06.477354",
-                                            "createdByUserId": "69b97326-104a-47dd-8bd3-22dd6983c5fb",
-                                            "createdByUserName": "Brad Clouser",
-                                            "commentsCount": 0,
-                                            "sectionId": "fb6c541f-5b52-4f54-bf4d-16c771914834",
-                                            "customColumns": [
-                                                {
-                                                    "title": "Approval Status",
-                                                    "data": {
-                                                        "Type": "Bounded",
-                                                        "Type": "Bounded",
-                                                        "allowMultipleValues": false,
-                                                        "boundedData": [],
-                                                        "scheduleCustomColumnId": "2d936bd8-b8ee-44b0-a7dc-bfac7e3315ad",
-                                                        "scheduleRowId": "44e721ab-b7a9-47da-bcf3-79ef970711e0"
-                                                    },
-                                                    "displayOrder": 1
-                                                },
-                                                {
-                                                    "title": "My bounded option",
-                                                    "data": {
-                                                        "Type": "Bounded",
-                                                        "Type": "Bounded",
-                                                        "allowMultipleValues": false,
-                                                        "boundedData": [],
-                                                        "scheduleCustomColumnId": "e76c0093-32ac-4ed9-b4d5-5ba11be0648f",
-                                                        "scheduleRowId": "44e721ab-b7a9-47da-bcf3-79ef970711e0"
-                                                    },
-                                                    "displayOrder": 3
-                                                },
-                                                {
-                                                    "title": "My Numeric Field",
-                                                    "data": {
-                                                        "Type": "Metric",
-                                                        "Type": "Metric",
-                                                        "allowMultipleValues": false,
-                                                        "decimalCount": 2,
-                                                        "metricData": [],
-                                                        "scheduleCustomColumnId": "6c39fa21-d149-4fdd-849e-78990371320b",
-                                                        "scheduleRowId": "44e721ab-b7a9-47da-bcf3-79ef970711e0"
-                                                    },
-                                                    "displayOrder": 4
-                                                }
-                                            ],
-                                            "displayOrder": 2,
-                                            "Type": "Product",
-                                            "isPlaceholderProduct": false,
-                                            "productId": "6e291a54-3e08-43bd-b9a5-9a6d87382319",
-                                            "productName": "Tilt & Turn - Al. Clad Wood",
-                                            "productSubName": "Operable",
-                                            "productImageUrl": "https://res.cloudinary.com/acelab/image/upload/v1671591183/product-files/Aluminum_Clad_Wood_Aluminum_Clad_Wood_Tilt_Turn_Aluminum_Clad_Wood_HH_Windows_Doors_3_ggiysu.jpg",
-                                            "manufacturerId": "78d978bb-18d6-4caf-ab68-5d45e190eea2",
-                                            "manufacturerName": "HH Windows & Doors",
-                                            "productUrlSlug": "hh-windows-and-doors-tilt-and-turn-al-clad-wood-window-operable",
-                                            "manufacturerUrlSlug": "hh-windows-&-doors",
-                                            "scheduleCustomColumnId": null,
-                                            "scheduleRowId": "44e721ab-b7a9-47da-bcf3-79ef970711e0"
-                                        }
-                                    ],
-                                    "parentSectionId": "59b4fbab-862a-4bb9-a67b-c8af34fc5dd5",
-                                    "isVisible": true,
-                                    "isExpanded": true,
-                                    "sectionType": "MasterFormat"
-                                }
-                            ],
-                            "products": null,
-                            "parentSectionId": "a4d07286-3347-4eb1-a570-fe0a227d9b05",
-                            "isVisible": true,
-                            "isExpanded": true,
-                            "sectionType": "MasterFormat"
-                        },
-                        {
-                            "sectionId": "ccedabd7-741a-42d5-84c5-097f1265a6a7",
-                            "masterFormatNumber": "08.53.00",
-                            "masterFormatName": "Plastic Windows",
-                            "childSections": [
-                                {
-                                    "sectionId": "36c88726-1d88-41de-ab9a-2f2065593785",
-                                    "masterFormatNumber": "08.53.13",
-                                    "masterFormatName": "Vinyl Windows",
-                                    "childSections": null,
-                                    "products": [
-                                        {
-                                            "categoryId": "140879ea-ea11-4a0a-802f-4451cdeaa1f6",
-                                            "categoryUrlSlug": "windows",
-                                            "createdDate": "2024-10-03T13:57:33.452069",
-                                            "createdByUserId": "69b97326-104a-47dd-8bd3-22dd6983c5fb",
-                                            "createdByUserName": "Brad Clouser",
-                                            "commentsCount": 0,
-                                            "sectionId": "36c88726-1d88-41de-ab9a-2f2065593785",
-                                            "customColumns": [
-                                                {
-                                                    "title": "Approval Status",
-                                                    "data": {
-                                                        "Type": "Bounded",
-                                                        "Type": "Bounded",
-                                                        "allowMultipleValues": false,
-                                                        "boundedData": [],
-                                                        "scheduleCustomColumnId": "2d936bd8-b8ee-44b0-a7dc-bfac7e3315ad",
-                                                        "scheduleRowId": "b1f84a85-c821-4196-bda5-b83c1e22ce15"
-                                                    },
-                                                    "displayOrder": 1
-                                                },
-                                                {
-                                                    "title": "My bounded option",
-                                                    "data": {
-                                                        "Type": "Bounded",
-                                                        "Type": "Bounded",
-                                                        "allowMultipleValues": false,
-                                                        "boundedData": [],
-                                                        "scheduleCustomColumnId": "e76c0093-32ac-4ed9-b4d5-5ba11be0648f",
-                                                        "scheduleRowId": "b1f84a85-c821-4196-bda5-b83c1e22ce15"
-                                                    },
-                                                    "displayOrder": 3
-                                                },
-                                                {
-                                                    "title": "My Numeric Field",
-                                                    "data": {
-                                                        "Type": "Metric",
-                                                        "Type": "Metric",
-                                                        "allowMultipleValues": false,
-                                                        "decimalCount": 2,
-                                                        "metricData": [],
-                                                        "scheduleCustomColumnId": "6c39fa21-d149-4fdd-849e-78990371320b",
-                                                        "scheduleRowId": "b1f84a85-c821-4196-bda5-b83c1e22ce15"
-                                                    },
-                                                    "displayOrder": 4
-                                                }
-                                            ],
-                                            "displayOrder": 1,
-                                            "Type": "Product",
-                                            "isPlaceholderProduct": false,
-                                            "productId": "96525fdb-09b2-4842-83f8-66f66dd78b81",
-                                            "productName": "Awning - Vinyl",
-                                            "productSubName": "Residential Vinyl",
-                                            "productImageUrl": "https://res.cloudinary.com/acelab/image/upload/v1671585225/product-files/Vinyl_Awning_Vinyl_Acadia_Windows_and_Doors_1_depydg.png",
-                                            "manufacturerId": "2324bfc6-8afb-4ca5-bcda-b0eaa0bf14be",
-                                            "manufacturerName": "Acadia Windows and Doors",
-                                            "productUrlSlug": "acadia-windows-and-doors-awning-vinyl-window-residential-vinyl",
-                                            "manufacturerUrlSlug": "acadia",
-                                            "scheduleCustomColumnId": null,
-                                            "scheduleRowId": "b1f84a85-c821-4196-bda5-b83c1e22ce15"
-                                        }
-                                    ],
-                                    "parentSectionId": "ccedabd7-741a-42d5-84c5-097f1265a6a7",
-                                    "isVisible": false,
-                                    "isExpanded": true,
-                                    "sectionType": "MasterFormat"
-                                }
-                            ],
-                            "products": null,
-                            "parentSectionId": "a4d07286-3347-4eb1-a570-fe0a227d9b05",
-                            "isVisible": false,
-                            "isExpanded": true,
-                            "sectionType": "MasterFormat"
-                        }
-                    ],
-                    "products": null,
-                    "parentSectionId": "16e96a8a-a2f2-41a9-9427-87da42e07d7f",
-                    "isVisible": true,
-                    "isExpanded": true,
-                    "sectionType": "MasterFormat"
-                }
-            ],
-            "products": null,
-            "parentSectionId": null,
-            "isVisible": true,
-            "isExpanded": true,
-            "sectionType": "MasterFormat"
+          "sectionId": "7e9bc03e-5bd0-47ce-b8f3-6675ec2c760f",
+          "masterFormatNumber": "01.20.00",
+          "masterFormatName": "Price and Payment Procedures",
+          "childSections": [
+            {
+              "sectionId": "55f80708-302e-4153-88ba-9c6bc0a3b952",
+              "masterFormatNumber": "01.22.00",
+              "masterFormatName": "Unit Prices",
+              "childSections": null,
+              "products": null,
+              "parentSectionId": "7e9bc03e-5bd0-47ce-b8f3-6675ec2c760f",
+              "isVisible": true,
+              "isExpanded": true,
+              "sectionType": "MasterFormat"
+            }
+          ],
+          "products": null,
+          "parentSectionId": "02c52443-a783-466f-97dc-319a70a6294c",
+          "isVisible": true,
+          "isExpanded": true,
+          "sectionType": "MasterFormat"
         }
-    ],
-    "rowHeight": "Large"
+      ],
+      "products": null,
+      "parentSectionId": null,
+      "isVisible": true,
+      "isExpanded": true,
+      "sectionType": "MasterFormat"
+    },
+    {
+      "sectionId": "16e96a8a-a2f2-41a9-9427-87da42e07d7f",
+      "masterFormatNumber": "08",
+      "masterFormatName": "Openings",
+      "childSections": [
+        {
+          "sectionId": "a6cd490f-7146-4ac6-a9f7-9ac80b1c4c1e",
+          "masterFormatNumber": "08.10.00",
+          "masterFormatName": "Doors and Frames",
+          "childSections": [
+            {
+              "sectionId": "9f175d68-4ce2-426b-bf2c-6ed12f731103",
+              "masterFormatNumber": "08.11.00",
+              "masterFormatName": "Metal Doors and Frames",
+              "childSections": [
+                {
+                  "sectionId": "4e680a8d-e635-4b0d-9eb8-041d62b28046",
+                  "masterFormatNumber": "08.11.13",
+                  "masterFormatName": "Hollow Metal Doors and Frames",
+                  "childSections": null,
+                  "products": [
+                    {
+                      "categoryId": "c8e2a151-d1ea-47bf-82ac-71c4a1744956",
+                      "categoryUrlSlug": "doors",
+                      "createdDate": "2024-10-03T10:13:38.905834",
+                      "createdByUserId": "69b97326-104a-47dd-8bd3-22dd6983c5fb",
+                      "createdByUserName": "Brad Clouser",
+                      "commentsCount": 0,
+                      "sectionId": "4e680a8d-e635-4b0d-9eb8-041d62b28046",
+                      "customColumns": [
+                        {
+                          "title": "Approval Status",
+                          "data": {
+                            "Type": "Bounded",
+                            "Type": "Bounded",
+                            "allowMultipleValues": false,
+                            "boundedData": [
+                              {
+                                "boundedDataOptionId": "8d501138-01b8-4324-a026-9c583b0d25d5",
+                                "name": "Approved Alternate",
+                                "color": "95eece"
+                              }
+                            ],
+                            "scheduleCustomColumnId": "2d936bd8-b8ee-44b0-a7dc-bfac7e3315ad",
+                            "scheduleRowId": "f26e6f14-0851-45e0-acb3-b7847c375eeb"
+                          },
+                          "displayOrder": 1
+                        },
+                        {
+                          "title": "My bounded option",
+                          "data": {
+                            "Type": "Bounded",
+                            "Type": "Bounded",
+                            "allowMultipleValues": false,
+                            "boundedData": [
+                              {
+                                "boundedDataOptionId": "e1826ec9-b055-4fc6-8d46-2d1878786095",
+                                "name": "Option1",
+                                "color": "DFF4EC"
+                              },
+                              {
+                                "boundedDataOptionId": "5db23355-dd43-4597-856a-4922a7849dfb",
+                                "name": "Option2",
+                                "color": "E5E9F0"
+                              },
+                              {
+                                "boundedDataOptionId": "3d3b7c62-c1c2-4ba1-b159-68223f08b1c8",
+                                "name": "Option3",
+                                "color": "D1E2FF"
+                              }
+                            ],
+                            "scheduleCustomColumnId": "e76c0093-32ac-4ed9-b4d5-5ba11be0648f",
+                            "scheduleRowId": "f26e6f14-0851-45e0-acb3-b7847c375eeb"
+                          },
+                          "displayOrder": 3
+                        },
+                        {
+                          "title": "My Numeric Field",
+                          "data": {
+                            "Type": "Metric",
+                            "Type": "Metric",
+                            "allowMultipleValues": false,
+                            "decimalCount": 2,
+                            "metricData": [
+                              {
+                                "metricValueId": "f66f24e6-5dea-4d8f-98ad-7c950df9c1fb",
+                                "value": 1
+                              },
+                              {
+                                "metricValueId": "62e518db-140a-4b7f-a9a9-9dd3713c8f77",
+                                "value": 2
+                              },
+                              {
+                                "metricValueId": "6750750b-621c-4544-8959-ace895451d8e",
+                                "value": 3
+                              }
+                            ],
+                            "scheduleCustomColumnId": "6c39fa21-d149-4fdd-849e-78990371320b",
+                            "scheduleRowId": "f26e6f14-0851-45e0-acb3-b7847c375eeb"
+                          },
+                          "displayOrder": 4
+                        }
+                      ],
+                      "displayOrder": 1,
+                      "Type": "Product",
+                      "isPlaceholderProduct": false,
+                      "productId": "74f40338-82e8-4315-b437-91c5ef624cb2",
+                      "productName": "Four-Fold Door",
+                      "productSubName": "FF100 Solid Sheeted-Cold-Rlld.Stl.",
+                      "productImageUrl": "https://res.cloudinary.com/acelab/image/upload/v1682652577/product-files/Mz4bfzxn_GU6p-ar0TBBF89rsk-AkGu8UxZgWuIb6TA_cpz7wc.jpg",
+                      "manufacturerId": "8dceef35-b02a-48f2-99af-f0aafdb6d7e5",
+                      "manufacturerName": "Door Engineering & Manufacturing",
+                      "productUrlSlug": "door-engineering-and-manufacturing-four-fold-door-ff100-solid-sheeted-cold-rlld-stl-",
+                      "manufacturerUrlSlug": "door-engineering--mnaufacturing",
+                      "scheduleCustomColumnId": null,
+                      "scheduleRowId": "f26e6f14-0851-45e0-acb3-b7847c375eeb"
+                    },
+                    {
+                      "categoryId": "c8e2a151-d1ea-47bf-82ac-71c4a1744956",
+                      "categoryUrlSlug": "doors",
+                      "createdDate": "2024-10-03T10:13:38.905888",
+                      "createdByUserId": "69b97326-104a-47dd-8bd3-22dd6983c5fb",
+                      "createdByUserName": "Brad Clouser",
+                      "commentsCount": 0,
+                      "sectionId": "4e680a8d-e635-4b0d-9eb8-041d62b28046",
+                      "customColumns": [
+                        {
+                          "title": "Approval Status",
+                          "data": {
+                            "Type": "Bounded",
+                            "Type": "Bounded",
+                            "allowMultipleValues": false,
+                            "boundedData": [
+                              {
+                                "boundedDataOptionId": "f28a5acf-9307-4791-a97d-f34004e29f38",
+                                "name": "In Consideration",
+                                "color": "f1f2f4"
+                              }
+                            ],
+                            "scheduleCustomColumnId": "2d936bd8-b8ee-44b0-a7dc-bfac7e3315ad",
+                            "scheduleRowId": "f0e40736-679d-4f1a-99e8-bfc3e0a98469"
+                          },
+                          "displayOrder": 1
+                        },
+                        {
+                          "title": "My bounded option",
+                          "data": {
+                            "Type": "Bounded",
+                            "Type": "Bounded",
+                            "allowMultipleValues": false,
+                            "boundedData": [],
+                            "scheduleCustomColumnId": "e76c0093-32ac-4ed9-b4d5-5ba11be0648f",
+                            "scheduleRowId": "f0e40736-679d-4f1a-99e8-bfc3e0a98469"
+                          },
+                          "displayOrder": 3
+                        },
+                        {
+                          "title": "My Numeric Field",
+                          "data": {
+                            "Type": "Metric",
+                            "Type": "Metric",
+                            "allowMultipleValues": false,
+                            "decimalCount": 2,
+                            "metricData": [],
+                            "scheduleCustomColumnId": "6c39fa21-d149-4fdd-849e-78990371320b",
+                            "scheduleRowId": "f0e40736-679d-4f1a-99e8-bfc3e0a98469"
+                          },
+                          "displayOrder": 4
+                        }
+                      ],
+                      "displayOrder": 2,
+                      "Type": "Product",
+                      "isPlaceholderProduct": false,
+                      "productId": "8f4e5492-a3a9-4306-a959-a0d64ee345c0",
+                      "productName": "Top-Hung Sliding Door",
+                      "productSubName": "Fire Rated  - Cold-Rolled Steel",
+                      "productImageUrl": "https://res.cloudinary.com/acelab/image/upload/v1682652006/product-files/YEYOQ32bQ0siVQFzmeVb3xKDqDW2iVFz3UfLfADUT1E_auyrj3.jpg",
+                      "manufacturerId": "8dceef35-b02a-48f2-99af-f0aafdb6d7e5",
+                      "manufacturerName": "Door Engineering & Manufacturing",
+                      "productUrlSlug": "door-engineering-and-manufacturing-top-hung-sliding-door-fire-rated-cold-rolled-steel",
+                      "manufacturerUrlSlug": "door-engineering--mnaufacturing",
+                      "scheduleCustomColumnId": null,
+                      "scheduleRowId": "f0e40736-679d-4f1a-99e8-bfc3e0a98469"
+                    },
+                    {
+                      "categoryId": "c8e2a151-d1ea-47bf-82ac-71c4a1744956",
+                      "categoryUrlSlug": "doors",
+                      "createdDate": "2024-10-03T10:13:38.905931",
+                      "createdByUserId": "69b97326-104a-47dd-8bd3-22dd6983c5fb",
+                      "createdByUserName": "Brad Clouser",
+                      "commentsCount": 0,
+                      "sectionId": "4e680a8d-e635-4b0d-9eb8-041d62b28046",
+                      "customColumns": [
+                        {
+                          "title": "Approval Status",
+                          "data": {
+                            "Type": "Bounded",
+                            "Type": "Bounded",
+                            "allowMultipleValues": false,
+                            "boundedData": [
+                              {
+                                "boundedDataOptionId": "233748cd-c7bf-4953-8ec6-bcbd40f2d614",
+                                "name": "Selected",
+                                "color": "b7f8e0"
+                              }
+                            ],
+                            "scheduleCustomColumnId": "2d936bd8-b8ee-44b0-a7dc-bfac7e3315ad",
+                            "scheduleRowId": "33968fbd-0e38-4c81-abb7-af35263ca6e5"
+                          },
+                          "displayOrder": 1
+                        },
+                        {
+                          "title": "My bounded option",
+                          "data": {
+                            "Type": "Bounded",
+                            "Type": "Bounded",
+                            "allowMultipleValues": false,
+                            "boundedData": [],
+                            "scheduleCustomColumnId": "e76c0093-32ac-4ed9-b4d5-5ba11be0648f",
+                            "scheduleRowId": "33968fbd-0e38-4c81-abb7-af35263ca6e5"
+                          },
+                          "displayOrder": 3
+                        },
+                        {
+                          "title": "My Numeric Field",
+                          "data": {
+                            "Type": "Metric",
+                            "Type": "Metric",
+                            "allowMultipleValues": false,
+                            "decimalCount": 2,
+                            "metricData": [],
+                            "scheduleCustomColumnId": "6c39fa21-d149-4fdd-849e-78990371320b",
+                            "scheduleRowId": "33968fbd-0e38-4c81-abb7-af35263ca6e5"
+                          },
+                          "displayOrder": 4
+                        }
+                      ],
+                      "displayOrder": 3,
+                      "Type": "Product",
+                      "isPlaceholderProduct": false,
+                      "productId": "aa49f976-92bd-439c-833e-50f25c2e764d",
+                      "productName": "Swing Door",
+                      "productSubName": "Automatic - Cold-Rolled Steel",
+                      "productImageUrl": "https://res.cloudinary.com/acelab/image/upload/v1682652144/product-files/2GfOAJIQenVPS2bJr_Mh8ifnJHz3nZu5LHg7SEsMi6I_hnpuel.jpg",
+                      "manufacturerId": "8dceef35-b02a-48f2-99af-f0aafdb6d7e5",
+                      "manufacturerName": "Door Engineering & Manufacturing",
+                      "productUrlSlug": "door-engineering-and-manufacturing-swing-door-automatic-cold-rolled-steel",
+                      "manufacturerUrlSlug": "door-engineering--mnaufacturing",
+                      "scheduleCustomColumnId": null,
+                      "scheduleRowId": "33968fbd-0e38-4c81-abb7-af35263ca6e5"
+                    }
+                  ],
+                  "parentSectionId": "9f175d68-4ce2-426b-bf2c-6ed12f731103",
+                  "isVisible": true,
+                  "isExpanded": true,
+                  "sectionType": "MasterFormat"
+                }
+              ],
+              "products": null,
+              "parentSectionId": "a6cd490f-7146-4ac6-a9f7-9ac80b1c4c1e",
+              "isVisible": true,
+              "isExpanded": true,
+              "sectionType": "MasterFormat"
+            },
+            {
+              "sectionId": "e93dc17e-50e0-47bb-9480-ede30f8060cb",
+              "masterFormatNumber": "08.14.00",
+              "masterFormatName": "Wood Doors",
+              "childSections": [
+                {
+                  "sectionId": "f80b3488-f03c-4848-aeaf-d568f659ebba",
+                  "masterFormatNumber": "08.14.13",
+                  "masterFormatName": "Carved Wood Doors",
+                  "childSections": null,
+                  "products": [
+                    {
+                      "categoryId": "464a9e20-61df-4742-abc6-3591270b0ca6",
+                      "categoryUrlSlug": "masonry-anchors-and-accessories",
+                      "createdDate": "2024-10-03T10:28:50.12336",
+                      "createdByUserId": "69b97326-104a-47dd-8bd3-22dd6983c5fb",
+                      "createdByUserName": "Brad Clouser",
+                      "commentsCount": 0,
+                      "sectionId": "f80b3488-f03c-4848-aeaf-d568f659ebba",
+                      "customColumns": [
+                        {
+                          "title": "Approval Status",
+                          "data": {
+                            "Type": "Bounded",
+                            "Type": "Bounded",
+                            "allowMultipleValues": false,
+                            "boundedData": [],
+                            "scheduleCustomColumnId": "2d936bd8-b8ee-44b0-a7dc-bfac7e3315ad",
+                            "scheduleRowId": "21fa829f-8f35-4df4-935f-ca63299aed39"
+                          },
+                          "displayOrder": 1
+                        },
+                        {
+                          "title": "My bounded option",
+                          "data": {
+                            "Type": "Bounded",
+                            "Type": "Bounded",
+                            "allowMultipleValues": false,
+                            "boundedData": [],
+                            "scheduleCustomColumnId": "e76c0093-32ac-4ed9-b4d5-5ba11be0648f",
+                            "scheduleRowId": "21fa829f-8f35-4df4-935f-ca63299aed39"
+                          },
+                          "displayOrder": 3
+                        },
+                        {
+                          "title": "My Numeric Field",
+                          "data": {
+                            "Type": "Metric",
+                            "Type": "Metric",
+                            "allowMultipleValues": false,
+                            "decimalCount": 2,
+                            "metricData": [],
+                            "scheduleCustomColumnId": "6c39fa21-d149-4fdd-849e-78990371320b",
+                            "scheduleRowId": "21fa829f-8f35-4df4-935f-ca63299aed39"
+                          },
+                          "displayOrder": 4
+                        }
+                      ],
+                      "displayOrder": 1,
+                      "Type": "Product",
+                      "isPlaceholderProduct": true,
+                      "productId": null,
+                      "productName": "Mas Placeholder",
+                      "productSubName": null,
+                      "productImageUrl": null,
+                      "manufacturerId": null,
+                      "manufacturerName": "test",
+                      "productUrlSlug": null,
+                      "manufacturerUrlSlug": null,
+                      "scheduleCustomColumnId": null,
+                      "scheduleRowId": "21fa829f-8f35-4df4-935f-ca63299aed39"
+                    }
+                  ],
+                  "parentSectionId": "e93dc17e-50e0-47bb-9480-ede30f8060cb",
+                  "isVisible": true,
+                  "isExpanded": true,
+                  "sectionType": "MasterFormat"
+                }
+              ],
+              "products": null,
+              "parentSectionId": "a6cd490f-7146-4ac6-a9f7-9ac80b1c4c1e",
+              "isVisible": true,
+              "isExpanded": true,
+              "sectionType": "MasterFormat"
+            }
+          ],
+          "products": null,
+          "parentSectionId": "16e96a8a-a2f2-41a9-9427-87da42e07d7f",
+          "isVisible": true,
+          "isExpanded": true,
+          "sectionType": "MasterFormat"
+        },
+        {
+          "sectionId": "03b324a3-1eef-4161-afa5-c96cfb8b6efb",
+          "masterFormatNumber": "08.40.00",
+          "masterFormatName": "Entrances & Storefronts & Curtain Walls",
+          "childSections": [
+            {
+              "sectionId": "ea0b80c6-70d6-4490-9be5-0adcf9f1329d",
+              "masterFormatNumber": "08.42.00",
+              "masterFormatName": "Entrances",
+              "childSections": [
+                {
+                  "sectionId": "9ed7a51f-5ab0-48eb-b990-222addb0f8fa",
+                  "masterFormatNumber": "08.42.13",
+                  "masterFormatName": "Aluminum-Framed Entrances",
+                  "childSections": null,
+                  "products": null,
+                  "parentSectionId": "ea0b80c6-70d6-4490-9be5-0adcf9f1329d",
+                  "isVisible": true,
+                  "isExpanded": true,
+                  "sectionType": "MasterFormat"
+                }
+              ],
+              "products": null,
+              "parentSectionId": "03b324a3-1eef-4161-afa5-c96cfb8b6efb",
+              "isVisible": true,
+              "isExpanded": true,
+              "sectionType": "MasterFormat"
+            }
+          ],
+          "products": null,
+          "parentSectionId": "16e96a8a-a2f2-41a9-9427-87da42e07d7f",
+          "isVisible": true,
+          "isExpanded": true,
+          "sectionType": "MasterFormat"
+        },
+        {
+          "sectionId": "a4d07286-3347-4eb1-a570-fe0a227d9b05",
+          "masterFormatNumber": "08.50.00",
+          "masterFormatName": "Windows",
+          "childSections": [
+            {
+              "sectionId": "59b4fbab-862a-4bb9-a67b-c8af34fc5dd5",
+              "masterFormatNumber": "08.52.00",
+              "masterFormatName": "Wood Windows",
+              "childSections": [
+                {
+                  "sectionId": "fb6c541f-5b52-4f54-bf4d-16c771914834",
+                  "masterFormatNumber": "08.52.13",
+                  "masterFormatName": "Metal-Clad Wood Windows",
+                  "childSections": null,
+                  "products": [
+                    {
+                      "categoryId": "140879ea-ea11-4a0a-802f-4451cdeaa1f6",
+                      "categoryUrlSlug": "windows",
+                      "createdDate": "2024-10-03T11:54:06.475",
+                      "createdByUserId": "69b97326-104a-47dd-8bd3-22dd6983c5fb",
+                      "createdByUserName": "Brad Clouser",
+                      "commentsCount": 0,
+                      "sectionId": "fb6c541f-5b52-4f54-bf4d-16c771914834",
+                      "customColumns": [
+                        {
+                          "title": "Approval Status",
+                          "data": {
+                            "Type": "Bounded",
+                            "Type": "Bounded",
+                            "allowMultipleValues": false,
+                            "boundedData": [],
+                            "scheduleCustomColumnId": "2d936bd8-b8ee-44b0-a7dc-bfac7e3315ad",
+                            "scheduleRowId": "8c026521-b082-4bf0-be72-87251a63081e"
+                          },
+                          "displayOrder": 1
+                        },
+                        {
+                          "title": "My bounded option",
+                          "data": {
+                            "Type": "Bounded",
+                            "Type": "Bounded",
+                            "allowMultipleValues": false,
+                            "boundedData": [],
+                            "scheduleCustomColumnId": "e76c0093-32ac-4ed9-b4d5-5ba11be0648f",
+                            "scheduleRowId": "8c026521-b082-4bf0-be72-87251a63081e"
+                          },
+                          "displayOrder": 3
+                        },
+                        {
+                          "title": "My Numeric Field",
+                          "data": {
+                            "Type": "Metric",
+                            "Type": "Metric",
+                            "allowMultipleValues": false,
+                            "decimalCount": 2,
+                            "metricData": [],
+                            "scheduleCustomColumnId": "6c39fa21-d149-4fdd-849e-78990371320b",
+                            "scheduleRowId": "8c026521-b082-4bf0-be72-87251a63081e"
+                          },
+                          "displayOrder": 4
+                        }
+                      ],
+                      "displayOrder": 1,
+                      "Type": "Product",
+                      "isPlaceholderProduct": false,
+                      "productId": "8ab88fe7-7e75-4b26-a6cc-12c50ade2fee",
+                      "productName": "Picture - Aluminum-Clad Wood",
+                      "productSubName": "Passive House",
+                      "productImageUrl": "https://res.cloudinary.com/acelab/image/upload/v1671590687/product-files/Passive_House_Fixed_Picture_Passive_House_HH_Windows_Doors_8_a7zfbj.png",
+                      "manufacturerId": "78d978bb-18d6-4caf-ab68-5d45e190eea2",
+                      "manufacturerName": "HH Windows & Doors",
+                      "productUrlSlug": "hh-windows-and-doors-picture-aluminum-clad-wood-window-passive-house",
+                      "manufacturerUrlSlug": "hh-windows-&-doors",
+                      "scheduleCustomColumnId": null,
+                      "scheduleRowId": "8c026521-b082-4bf0-be72-87251a63081e"
+                    },
+                    {
+                      "categoryId": "140879ea-ea11-4a0a-802f-4451cdeaa1f6",
+                      "categoryUrlSlug": "windows",
+                      "createdDate": "2024-10-03T11:54:06.477354",
+                      "createdByUserId": "69b97326-104a-47dd-8bd3-22dd6983c5fb",
+                      "createdByUserName": "Brad Clouser",
+                      "commentsCount": 0,
+                      "sectionId": "fb6c541f-5b52-4f54-bf4d-16c771914834",
+                      "customColumns": [
+                        {
+                          "title": "Approval Status",
+                          "data": {
+                            "Type": "Bounded",
+                            "Type": "Bounded",
+                            "allowMultipleValues": false,
+                            "boundedData": [],
+                            "scheduleCustomColumnId": "2d936bd8-b8ee-44b0-a7dc-bfac7e3315ad",
+                            "scheduleRowId": "44e721ab-b7a9-47da-bcf3-79ef970711e0"
+                          },
+                          "displayOrder": 1
+                        },
+                        {
+                          "title": "My bounded option",
+                          "data": {
+                            "Type": "Bounded",
+                            "Type": "Bounded",
+                            "allowMultipleValues": false,
+                            "boundedData": [],
+                            "scheduleCustomColumnId": "e76c0093-32ac-4ed9-b4d5-5ba11be0648f",
+                            "scheduleRowId": "44e721ab-b7a9-47da-bcf3-79ef970711e0"
+                          },
+                          "displayOrder": 3
+                        },
+                        {
+                          "title": "My Numeric Field",
+                          "data": {
+                            "Type": "Metric",
+                            "Type": "Metric",
+                            "allowMultipleValues": false,
+                            "decimalCount": 2,
+                            "metricData": [],
+                            "scheduleCustomColumnId": "6c39fa21-d149-4fdd-849e-78990371320b",
+                            "scheduleRowId": "44e721ab-b7a9-47da-bcf3-79ef970711e0"
+                          },
+                          "displayOrder": 4
+                        }
+                      ],
+                      "displayOrder": 2,
+                      "Type": "Product",
+                      "isPlaceholderProduct": false,
+                      "productId": "6e291a54-3e08-43bd-b9a5-9a6d87382319",
+                      "productName": "Tilt & Turn - Al. Clad Wood",
+                      "productSubName": "Operable",
+                      "productImageUrl": "https://res.cloudinary.com/acelab/image/upload/v1671591183/product-files/Aluminum_Clad_Wood_Aluminum_Clad_Wood_Tilt_Turn_Aluminum_Clad_Wood_HH_Windows_Doors_3_ggiysu.jpg",
+                      "manufacturerId": "78d978bb-18d6-4caf-ab68-5d45e190eea2",
+                      "manufacturerName": "HH Windows & Doors",
+                      "productUrlSlug": "hh-windows-and-doors-tilt-and-turn-al-clad-wood-window-operable",
+                      "manufacturerUrlSlug": "hh-windows-&-doors",
+                      "scheduleCustomColumnId": null,
+                      "scheduleRowId": "44e721ab-b7a9-47da-bcf3-79ef970711e0"
+                    }
+                  ],
+                  "parentSectionId": "59b4fbab-862a-4bb9-a67b-c8af34fc5dd5",
+                  "isVisible": true,
+                  "isExpanded": true,
+                  "sectionType": "MasterFormat"
+                }
+              ],
+              "products": null,
+              "parentSectionId": "a4d07286-3347-4eb1-a570-fe0a227d9b05",
+              "isVisible": true,
+              "isExpanded": true,
+              "sectionType": "MasterFormat"
+            },
+            {
+              "sectionId": "ccedabd7-741a-42d5-84c5-097f1265a6a7",
+              "masterFormatNumber": "08.53.00",
+              "masterFormatName": "Plastic Windows",
+              "childSections": [
+                {
+                  "sectionId": "36c88726-1d88-41de-ab9a-2f2065593785",
+                  "masterFormatNumber": "08.53.13",
+                  "masterFormatName": "Vinyl Windows",
+                  "childSections": null,
+                  "products": [
+                    {
+                      "categoryId": "140879ea-ea11-4a0a-802f-4451cdeaa1f6",
+                      "categoryUrlSlug": "windows",
+                      "createdDate": "2024-10-03T13:57:33.452069",
+                      "createdByUserId": "69b97326-104a-47dd-8bd3-22dd6983c5fb",
+                      "createdByUserName": "Brad Clouser",
+                      "commentsCount": 0,
+                      "sectionId": "36c88726-1d88-41de-ab9a-2f2065593785",
+                      "customColumns": [
+                        {
+                          "title": "Approval Status",
+                          "data": {
+                            "Type": "Bounded",
+                            "Type": "Bounded",
+                            "allowMultipleValues": false,
+                            "boundedData": [],
+                            "scheduleCustomColumnId": "2d936bd8-b8ee-44b0-a7dc-bfac7e3315ad",
+                            "scheduleRowId": "b1f84a85-c821-4196-bda5-b83c1e22ce15"
+                          },
+                          "displayOrder": 1
+                        },
+                        {
+                          "title": "My bounded option",
+                          "data": {
+                            "Type": "Bounded",
+                            "Type": "Bounded",
+                            "allowMultipleValues": false,
+                            "boundedData": [],
+                            "scheduleCustomColumnId": "e76c0093-32ac-4ed9-b4d5-5ba11be0648f",
+                            "scheduleRowId": "b1f84a85-c821-4196-bda5-b83c1e22ce15"
+                          },
+                          "displayOrder": 3
+                        },
+                        {
+                          "title": "My Numeric Field",
+                          "data": {
+                            "Type": "Metric",
+                            "Type": "Metric",
+                            "allowMultipleValues": false,
+                            "decimalCount": 2,
+                            "metricData": [],
+                            "scheduleCustomColumnId": "6c39fa21-d149-4fdd-849e-78990371320b",
+                            "scheduleRowId": "b1f84a85-c821-4196-bda5-b83c1e22ce15"
+                          },
+                          "displayOrder": 4
+                        }
+                      ],
+                      "displayOrder": 1,
+                      "Type": "Product",
+                      "isPlaceholderProduct": false,
+                      "productId": "96525fdb-09b2-4842-83f8-66f66dd78b81",
+                      "productName": "Awning - Vinyl",
+                      "productSubName": "Residential Vinyl",
+                      "productImageUrl": "https://res.cloudinary.com/acelab/image/upload/v1671585225/product-files/Vinyl_Awning_Vinyl_Acadia_Windows_and_Doors_1_depydg.png",
+                      "manufacturerId": "2324bfc6-8afb-4ca5-bcda-b0eaa0bf14be",
+                      "manufacturerName": "Acadia Windows and Doors",
+                      "productUrlSlug": "acadia-windows-and-doors-awning-vinyl-window-residential-vinyl",
+                      "manufacturerUrlSlug": "acadia",
+                      "scheduleCustomColumnId": null,
+                      "scheduleRowId": "b1f84a85-c821-4196-bda5-b83c1e22ce15"
+                    }
+                  ],
+                  "parentSectionId": "ccedabd7-741a-42d5-84c5-097f1265a6a7",
+                  "isVisible": false,
+                  "isExpanded": true,
+                  "sectionType": "MasterFormat"
+                }
+              ],
+              "products": null,
+              "parentSectionId": "a4d07286-3347-4eb1-a570-fe0a227d9b05",
+              "isVisible": false,
+              "isExpanded": true,
+              "sectionType": "MasterFormat"
+            }
+          ],
+          "products": null,
+          "parentSectionId": "16e96a8a-a2f2-41a9-9427-87da42e07d7f",
+          "isVisible": true,
+          "isExpanded": true,
+          "sectionType": "MasterFormat"
+        }
+      ],
+      "products": null,
+      "parentSectionId": null,
+      "isVisible": true,
+      "isExpanded": true,
+      "sectionType": "MasterFormat"
+    }
+  ],
+  "rowHeight": "Large",
+  "project": {
+    "projectName": "Sanctums of the Divine",
+    "projectDescription": "My project description",
+    "city": "California City",
+    "stateId": "0e75277a-c043-4f6e-82c1-991fba454768",
+    "state": "California",
+    "locationFullName": "California City, CA, USA",
+    "typeId": "70b4b702-2698-46b9-91e7-b436e535d2b0",
+    "type": "Single Family Residential",
+    "budgetId": "a90d923e-c9bf-49ad-b81d-303111033c76",
+    "budget": "$0 - 2.4 Million",
+    "phaseId": "00dd22b9-1512-4ab0-b157-b18036fbffc7",
+    "phaseName": "Design Development",
+    "startDate": "1969-12-31T00:00:00",
+    "bannerImage": {
+      "id": "9ab0e323-d4bb-4cd9-880e-73a3cf1b685d",
+      "name": "Cosmetic_icon_Sanctums_of_the_Divine.jpg",
+      "size": 87777,
+      "url": "https://res.cloudinary.com/acelab/image/upload/v1731911429/ci/projects/Cosmetic_icon_Sanctums_of_the_Divine_g6h3aw.png"
+    }
+  }
 }

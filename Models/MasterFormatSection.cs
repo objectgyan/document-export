@@ -53,8 +53,28 @@ namespace MasterFormatDocExportPOC.Models
         public decimal Value { get; set; }
     }
 
+    public class Project
+    {
+        public string ProjectName { get; set; }
+        public string ProjectDescription { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string LocationFullName { get; set; }
+        public string Type { get; set; }
+        public string Budget { get; set; }
+        public string PhaseName { get; set; }
+
+        public BannerImage BannerImage { get; set; }
+    }
+
+    public class BannerImage 
+    {
+        public string Url { get; set; }
+    }
+
     public class MasterFormatResponse
     {
         public List<MasterFormatSection> MasterFormatSections { get; set; }
+        public Project Project { get; set; }
     }
 }

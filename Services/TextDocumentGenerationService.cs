@@ -135,7 +135,7 @@ namespace MasterFormatDocExportPOC.Services
             }
         }
 
-        public void GenerateDocument(List<MasterFormatSection> sections, string outputPath)
+        public void GenerateDocument(List<MasterFormatSection> sections, string outputPath, Project project)
         {
             _stringBuilder.Clear();
             
