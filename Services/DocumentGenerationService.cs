@@ -11,6 +11,9 @@ namespace MasterFormatDocExportPOC.Services
 {
     public class DocumentGenerationService : IDocumentGenerationService
     {
+        private const int ABOUT_SECTION = 101;
+        private const int PROJECT_NAME = 100;
+
         public void GenerateDocument(List<MasterFormatSection> sections, string outputPath, Project project)
         {
             using (WordprocessingDocument wordDocument = 
@@ -94,7 +97,7 @@ namespace MasterFormatDocExportPOC.Services
             AddImageFromUrl(body, imageUrl);
 
             // Add project name in bold and increased font size
-            AddStyledParagraph(body, project.ProjectName, 100, true);
+            AddStyledParagraph(body, project.ProjectName, PROJECT_NAME, true);
 
             // Create table for project details
             Table table = new Table();
@@ -122,7 +125,7 @@ namespace MasterFormatDocExportPOC.Services
             body.AppendChild(table);
 
             // Add "About Project" section
-            AddStyledParagraph(body, "About Project:", 101, true);
+            AddStyledParagraph(body, "About Project:", ABOUT_SECTION, true);
             AddStyledParagraph(body, project.ProjectDescription, 2);
         }
 
@@ -438,7 +441,7 @@ namespace MasterFormatDocExportPOC.Services
                     runProperties.Append(new FontSize() { Val = "48" });
                     paraProperties.Append(new SpacingBetweenLines() { Before = "240", After = "240" });
                     break;
-                case 101: // Project Title
+                case 101: // About Section
                     runProperties.Append(new FontSize() { Val = "32" });
                     paraProperties.Append(new SpacingBetweenLines() { Before = "240", After = "120" });
                     break;
