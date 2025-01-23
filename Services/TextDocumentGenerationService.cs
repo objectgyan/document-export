@@ -60,7 +60,6 @@ namespace MasterFormatDocExportPOC.Services
             // Add products if any
             if (section.Products?.Any() == true)
             {
-                _stringBuilder.AppendLine("  Products:");
                 foreach (var product in section.Products)
                 {
                     string productText = product.ProductName;

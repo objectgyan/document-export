@@ -215,14 +215,17 @@ namespace MasterFormatDocExportPOC.Services
         private void ProcessTocSection(Body body, MasterFormatSection section, int level)
         {
             string indent = new string(' ', level * 2);
-            // Make top-level sections bold in TOC
-            if (level == 0)
+            string sectionText;
+
+            if (level == 0) // Top-level section in TOC
             {
-                AddStyledParagraph(body, $"{indent}{section.MasterFormatNumber} - {section.MasterFormatName}", 2, true);
+                sectionText = $"{indent}DIVISION {section.MasterFormatNumber} - {section.MasterFormatName}";
+                AddStyledParagraph(body, sectionText, 2, true);
             }
             else
             {
-                AddStyledParagraph(body, $"{indent}{section.MasterFormatNumber} - {section.MasterFormatName}", 2);
+                sectionText = $"{indent}{section.MasterFormatNumber} - {section.MasterFormatName}";
+                AddStyledParagraph(body, sectionText, 2);
             }
 
             if (section.ChildSections?.Any() == true)
@@ -237,7 +240,15 @@ namespace MasterFormatDocExportPOC.Services
         private void ProcessDetailedSection(Body body, MasterFormatSection section, int level)
         {
             // Add section header with bold for parent and immediate child
-            string headerText = $"{section.MasterFormatNumber} - {section.MasterFormatName}";
+            string headerText;
+            if (level == 1) // Top-level section
+            {
+                headerText = $"DIVISION {section.MasterFormatNumber} - {section.MasterFormatName}";
+            }
+            else
+            {
+                headerText = $"{section.MasterFormatNumber} - {section.MasterFormatName}";
+            }
 
             if (level == 1 || level == 2)
             {
@@ -251,19 +262,12 @@ namespace MasterFormatDocExportPOC.Services
             // Process products if any
             if (section.Products?.Any() == true)
             {
-                AddStyledParagraph(body, "Products:", level + 1);
-
+                char bulletPoint = 'A';
                 foreach (var product in section.Products)
                 {
-                    ProcessProduct(body, product, level + 2);
+                    ProcessProduct(body, product, level + 2, bulletPoint);
+                    bulletPoint++;
                 }
-
-                // Add creation info once for all products
-                var firstProduct = section.Products.First();
-                AddStyledParagraph(body, 
-                    $"Date Added - {firstProduct.CreatedDate:yyyy-MM-dd} {firstProduct.CreatedByUserName}", 
-                    level + 2);
-                AddStyledParagraph(body, string.Empty, 3); // Add spacing
             }
 
             // Process child sections
@@ -276,29 +280,91 @@ namespace MasterFormatDocExportPOC.Services
             }
         }
 
-        private void ProcessProduct(Body body, Product product, int level)
+        private void ProcessProduct(Body body, Product product, int level, char bulletPoint)
         {
-            // Product header
-            string productText = product.ProductName;
+            // Create paragraph for product header
+            Paragraph para = new Paragraph();
+            ParagraphProperties paraProperties = new ParagraphProperties();
+            paraProperties.Append(new Indentation() { Left = "360" });
+            para.Append(paraProperties);
+            
+            // Add bullet point with bold and space after
+            Run bulletRun = new Run();
+            RunProperties bulletProps = new RunProperties();
+            bulletProps.Append(new Bold());
+            bulletProps.Append(new RunFonts() { Ascii = "Arial", HighAnsi = "Arial" });
+            bulletProps.Append(new FontSize() { Val = "22" });
+            bulletRun.Append(bulletProps);
+            
+            // Add bullet point with preserved spaces
+            Text bulletText = new Text($"{bulletPoint}. ") { Space = SpaceProcessingModeValues.Preserve };
+            bulletRun.Append(bulletText);
+
+            // Add product name and details
+            Run textRun = new Run();
+            RunProperties textProps = new RunProperties();
+            textProps.Append(new RunFonts() { Ascii = "Arial", HighAnsi = "Arial" });
+            textProps.Append(new FontSize() { Val = "22" });
+            textRun.Append(textProps);
+
+            string productDetails = product.ProductName;
             if (!string.IsNullOrEmpty(product.ProductSubName))
-                productText += $" - {product.ProductSubName}";
+                productDetails += $" - {product.ProductSubName}";
             if (!string.IsNullOrEmpty(product.ManufacturerName))
-                productText += $" ({product.ManufacturerName})";
+                productDetails += $" ({product.ManufacturerName})";
 
-            AddStyledParagraph(body, productText, level);
+            Text productText = new Text(productDetails) { Space = SpaceProcessingModeValues.Preserve };
+            textRun.Append(productText);
 
-            // Process custom columns
+            // Combine bullet point and text
+            para.Append(bulletRun);
+            para.Append(textRun);
+            body.Append(para);
+
+            // Process custom columns with more indentation
             if (product.CustomColumns?.Any() == true)
             {
                 int columnNumber = 1;
                 foreach (var column in product.CustomColumns.OrderBy(c => c.DisplayOrder))
                 {
                     string value = GetFormattedColumnValue(column);
-                    AddStyledParagraph(body, $"{columnNumber}. {column.Title} - {value}", level + 1);
+                    
+                    Paragraph subPara = new Paragraph();
+                    ParagraphProperties subParaProps = new ParagraphProperties();
+                    subParaProps.Append(new Indentation() { Left = "720" }); // Add more indentation (1 inch)
+                    subPara.Append(subParaProps);
+
+                    Run subRun = new Run();
+                    RunProperties subRunProps = new RunProperties();
+                    subRunProps.Append(new RunFonts() { Ascii = "Arial", HighAnsi = "Arial" });
+                    subRunProps.Append(new FontSize() { Val = "22" });
+                    subRun.Append(subRunProps);
+                    subRun.Append(new Text($"{columnNumber}. {column.Title} - {value}"));
+                    
+                    subPara.Append(subRun);
+                    body.Append(subPara);
+                    
                     columnNumber++;
                 }
-                AddStyledParagraph(body, string.Empty, 3); // Add spacing between products
             }
+
+            // Add creation info with same indentation as custom columns
+            Paragraph datePara = new Paragraph();
+            ParagraphProperties dateParaProps = new ParagraphProperties();
+            dateParaProps.Append(new Indentation() { Left = "720" });
+            datePara.Append(dateParaProps);
+
+            Run dateRun = new Run();
+            RunProperties dateRunProps = new RunProperties();
+            dateRunProps.Append(new RunFonts() { Ascii = "Arial", HighAnsi = "Arial" });
+            dateRunProps.Append(new FontSize() { Val = "22" });
+            dateRun.Append(dateRunProps);
+            dateRun.Append(new Text($"4. Date Added - {product.CreatedDate:yyyy-MM-dd} {product.CreatedByUserName}"));
+            
+            datePara.Append(dateRun);
+            body.Append(datePara);
+            
+            //AddStyledParagraph(body, string.Empty, 3); // Add spacing after product
         }
 
         private void AddStyledParagraph(Body body, string text, int level, bool isBold = false)
