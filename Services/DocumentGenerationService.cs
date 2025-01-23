@@ -20,6 +20,9 @@ namespace MasterFormatDocExportPOC.Services
                 mainPart.Document = new Document();
                 Body body = mainPart.Document.AppendChild(new Body());
 
+                // Add page numbers in footer
+                AddPageNumbers(wordDocument);
+
                 // Add project details
                 AddProjectDetails(body, project);
                 AddPageBreak(body);
@@ -46,6 +49,41 @@ namespace MasterFormatDocExportPOC.Services
 
                 mainPart.Document.Save();
             }
+        }
+
+        private void AddPageNumbers(WordprocessingDocument wordDocument)
+        {
+            var mainPart = wordDocument.MainDocumentPart;
+            var footerPart = mainPart.AddNewPart<FooterPart>();
+            
+            // Create footer with page numbers and proper spacing
+            var footer = new Footer(
+                new Paragraph(
+                    new ParagraphProperties(
+                        new Justification() { Val = JustificationValues.Center }
+                    ),
+                    new Run(
+                        new RunProperties(
+                            new RunFonts() { Ascii = "Arial", HighAnsi = "Arial" },
+                            new FontSize() { Val = "20" }
+                        ),
+                        new Text("Page ") { Space = SpaceProcessingModeValues.Preserve },
+                        new SimpleField() { Instruction = "PAGE" },
+                        new Text(" of ") { Space = SpaceProcessingModeValues.Preserve },
+                        new SimpleField() { Instruction = "NUMPAGES" }
+                    )
+                )
+            );
+
+            footer.Save(footerPart);
+
+            var footerReference = new FooterReference() { 
+                Type = HeaderFooterValues.Default, 
+                Id = mainPart.GetIdOfPart(footerPart) 
+            };
+
+            var sectionProps = new SectionProperties(footerReference);
+            mainPart.Document.Body.AppendChild(sectionProps);
         }
 
         private void AddProjectDetails(Body body, Project project)
