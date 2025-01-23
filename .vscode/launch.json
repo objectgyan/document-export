@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "C#: MasterFormatDocExportPOC",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}\\MasterFormatDocExportPOC.csproj",
+            "launchConfigurationId": "TargetFramework=;MasterFormatDocExportPOC"
+        }
+    ]
+}
