@@ -6,7 +6,7 @@ namespace MasterFormatDocExportPOC.Services
     public class TextDocumentGenerationService : IDocumentGenerationService
     {
         private readonly StringBuilder _stringBuilder;
-        
+
         public TextDocumentGenerationService()
         {
             _stringBuilder = new StringBuilder();
@@ -15,7 +15,7 @@ namespace MasterFormatDocExportPOC.Services
         public string GenerateDocument(IEnumerable<MasterFormatSection> sections)
         {
             _stringBuilder.Clear();
-            
+
             // Add title
             _stringBuilder.AppendLine("TABLE OF CONTENTS");
             _stringBuilder.AppendLine();
@@ -39,106 +39,16 @@ namespace MasterFormatDocExportPOC.Services
             return _stringBuilder.ToString();
         }
 
-        private void AddToTableOfContents(MasterFormatSection section, int level)
-        {
-            _stringBuilder.AppendLine($"{section.MasterFormatNumber} - {section.MasterFormatName}");
-
-            if (section.ChildSections?.Any() == true)
-            {
-                foreach (var childSection in section.ChildSections)
-                {
-                    AddToTableOfContents(childSection, level + 1);
-                }
-            }
-        }
-
-        private void ProcessSection(MasterFormatSection section, int level)
-        {
-            // Add section header
-            _stringBuilder.AppendLine($"{section.MasterFormatNumber} - {section.MasterFormatName}");
-
-            // Add products if any
-            if (section.Products?.Any() == true)
-            {
-                foreach (var product in section.Products)
-                {
-                    string productText = product.ProductName;
-                    if (!string.IsNullOrEmpty(product.ProductSubName))
-                        productText += $" - {product.ProductSubName}";
-                    if (!string.IsNullOrEmpty(product.ManufacturerName))
-                        productText += $" ({product.ManufacturerName})";
-
-                    _stringBuilder.AppendLine($"    {productText}");
-
-                    // Add custom columns with numbering
-                    if (product.CustomColumns?.Any() == true)
-                    {
-                        int columnNumber = 1;
-                        foreach (var column in product.CustomColumns)
-                        {
-                            string value = string.Empty;
-                            
-                            switch (column.Data.Type)
-                            {
-                                case "Bounded":
-                                    if (column.Data.BoundedData?.Any() == true)
-                                    {
-                                        value = string.Join(", ", column.Data.BoundedData.Select(b => b.Name));
-                                    }
-                                    break;
-
-                                case "Metric":
-                                    if (column.Data.MetricData?.Any() == true)
-                                    {
-                                        var format = $"F{column.Data.DecimalCount}";
-                                        value = string.Join(", ", column.Data.MetricData.Select(m => m.Value.ToString(format)));
-                                    }
-                                    break;
-
-                                case "Text":
-                                    value = column.Data.Value ?? string.Empty;
-                                    break;
-                            }
-                            
-                            _stringBuilder.AppendLine($"      {columnNumber}. {column.Title} - {value}");
-                            columnNumber++;
-                        }
-                        _stringBuilder.AppendLine();
-                    }
-                    _stringBuilder.AppendLine();
-                }
-
-                // Add date added once after all products
-                if (section.Products.Any())
-                {
-                    var firstProduct = section.Products.First();
-                    _stringBuilder.AppendLine($"    Date Added - {firstProduct.CreatedDate:yyyy-MM-dd} {firstProduct.CreatedByUserName}");
-                    _stringBuilder.AppendLine();
-                }
-            }
-
-            // Process child sections
-            if (section.ChildSections?.Any() == true)
-            {
-                foreach (var childSection in section.ChildSections)
-                {
-                    ProcessSection(childSection, level + 1);
-                }
-            }
-
-            // Add extra line break after top-level sections (2-digit numbers)
-            if (section.MasterFormatNumber.Length == 2)
-            {
-                _stringBuilder.AppendLine();
-                _stringBuilder.AppendLine();
-            }
-        }
-
         public void GenerateDocument(List<MasterFormatSection> sections, string outputPath, Project project)
         {
             _stringBuilder.Clear();
-            
-            // Add title
+
+            // Add Project Details
+            AddProjectDetails(project);
+            _stringBuilder.AppendLine();
+            _stringBuilder.AppendLine();
+
+            // Add Table of Contents
             _stringBuilder.AppendLine("TABLE OF CONTENTS");
             _stringBuilder.AppendLine();
 
@@ -162,6 +72,105 @@ namespace MasterFormatDocExportPOC.Services
             File.WriteAllText(outputPath, _stringBuilder.ToString());
         }
 
+        private void AddProjectDetails(Project project)
+        {
+            // Project name
+            _stringBuilder.AppendLine(project.ProjectName);
+            _stringBuilder.AppendLine();
+
+            // Project details table
+            _stringBuilder.AppendLine($"Location: {project.LocationFullName}");
+            _stringBuilder.AppendLine($"Type:     {project.Type}");
+            _stringBuilder.AppendLine($"Budget:   {project.Budget}");
+            _stringBuilder.AppendLine($"Phase:    {project.PhaseName}");
+            _stringBuilder.AppendLine();
+
+            // About Project section
+            _stringBuilder.AppendLine("About Project:");
+            _stringBuilder.AppendLine(project.ProjectDescription);
+        }
+
+        private void AddToTableOfContents(MasterFormatSection section, int level)
+        {
+            _stringBuilder.AppendLine($"DIVISION {section.MasterFormatNumber} - {section.MasterFormatName}");
+
+            if (section.ChildSections?.Any() == true)
+            {
+                foreach (var childSection in section.ChildSections)
+                {
+                    AddToTableOfContents(childSection, level + 1);
+                }
+            }
+        }
+
+        private void ProcessSection(MasterFormatSection section, int level)
+        {
+            // Add section header with DIVISION prefix for top-level sections
+            if (level == 0)
+            {
+                _stringBuilder.AppendLine($"DIVISION {section.MasterFormatNumber} - {section.MasterFormatName}");
+            }
+            else
+            {
+                _stringBuilder.AppendLine($"{section.MasterFormatNumber} - {section.MasterFormatName}");
+            }
+
+            // Process products if any
+            if (section.Products?.Any() == true)
+            {
+                char bulletPoint = 'A';
+                foreach (var product in section.Products)
+                {
+                    ProcessProduct(product, bulletPoint);
+                    bulletPoint++;
+                }
+            }
+
+            // Process child sections
+            if (section.ChildSections?.Any() == true)
+            {
+                foreach (var childSection in section.ChildSections)
+                {
+                    ProcessSection(childSection, level + 1);
+                }
+            }
+
+            // Add extra line break after top-level sections
+            if (section.MasterFormatNumber.Length == 2)
+            {
+                _stringBuilder.AppendLine();
+            }
+        }
+
+        private void ProcessProduct(Product product, char bulletPoint)
+        {
+            // Product header with bullet point
+            string productText = $"    {bulletPoint}. {product.ProductName}";
+            if (!string.IsNullOrEmpty(product.ProductSubName))
+                productText += $" - {product.ProductSubName}";
+            if (!string.IsNullOrEmpty(product.ManufacturerName))
+                productText += $" ({product.ManufacturerName})";
+
+            _stringBuilder.AppendLine(productText);
+
+            // Process custom columns
+            if (product.CustomColumns?.Any() == true)
+            {
+                int columnNumber = 1;
+                foreach (var column in product.CustomColumns.OrderBy(c => c.DisplayOrder))
+                {
+                    string value = GetFormattedColumnValue(column);
+                    _stringBuilder.AppendLine($"        {columnNumber}. {column.Title} - {value}");
+                    columnNumber++;
+                }
+                //_stringBuilder.AppendLine();
+            }
+
+            // Add creation info as point 4
+            _stringBuilder.AppendLine($"        4. Date Added - {product.CreatedDate:yyyy-MM-dd} {product.CreatedByUserName}");
+            //_stringBuilder.AppendLine();
+        }
+
         private string GetFormattedColumnValue(CustomColumn column)
         {
             if (column.Data == null) return string.Empty;
@@ -173,7 +182,7 @@ namespace MasterFormatDocExportPOC.Services
                     : string.Empty,
 
                 "Metric" => column.Data.MetricData?.Any() == true
-                    ? string.Join(", ", column.Data.MetricData.Select(m => 
+                    ? string.Join(", ", column.Data.MetricData.Select(m =>
                         m.Value.ToString($"F{column.Data.DecimalCount}")))
                     : string.Empty,
 
